@@ -7,49 +7,44 @@
 <style type="text/css">
 body { 
   overflow: hidden; 
-  background-color: whitesmoke;
   margin: 0px;
+  background-color: black;
+  background-image: url('IMG_5232.JPEG');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
-
 * {
   box-sizing: border-box;
 }
-.menu {
-  float: left;
-  width: 20%;
-}
+
 .main {
-  float: left;
-  width: 60%;
-  padding: 0 20px;
-  overflow: hidden;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-.right {
-  background-color: lightblue;
-  float: left;
-  width: 20%;
-  padding: 10px 15px;
-  margin-top: 7px;
-}
+
 
 @media only screen and (max-width:800px) {
   /* For tablets: */
   .main {
-    width: 80%;
+    width: 50%;
     padding: 0;
-  }
-  .right {
-    width: 100%;
   }
 }
 @media only screen and (max-width:500px) {
   /* For mobile phones: */
-  .menu, .main, .right {
-    width: 100%;
+  .main {
+    width: 65%;
   }
 }
 img {
     max-width: 100%;
+    min-width: none;
+    min-height: none;
 }
 
 a:link, a:visited {
@@ -66,6 +61,7 @@ a:hover, a:active {
   padding: 5px 18px;
   font-family:Arial 
 }
+
 </head>
 </style>
 <body>
@@ -77,15 +73,12 @@ a:hover, a:active {
         <a href="Advantages.html"style="text-decoration:none;">Advantages</a>
         <a href="Contacts.html"style="text-decoration:none;">Contacts</a>
     </div>
-<div class="main">
-    <img align="center"; src="Capture.png" alt="Logo"/>
-</div>
-<h1 style="text-align:center;font-size:300%;color:green;">woodON</h1>
-<p style="color:black;background-image: url('title.PNG');width:100%; height:100%;">Blah blah text and stuff like that,yeah</p>
-<img style="width:10%; height:10%;" src="title.png" alt="title"/>
-<a href="https://idomus.eco/en" target="_blank"><p style="color:limegreen;">Visit iDomusEco english!</p></a>
-<a href="Company.html" class="active"><p style="color:limegreen;">Visit Our other page</p></a>
 
+<div class="body">
+  <div class="main">
+    <img style="text-align: center;" src="Capture.png" alt="Logo"/>
+  </div>
+</div>
 
 </body>
 </html>
